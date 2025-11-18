@@ -23,3 +23,15 @@ resource "aws_s3_object" "fruit_salad_image" {
   key    = "fruitsalad.png"
   source = "image/fruitsalad.png"
 }
+
+resource "aws_s3_object" "tumlogo" {
+  bucket = aws_s3_bucket.web_bucket.id
+  key    = "tumlogo.png"
+  source = "image/tumlogo.png"
+}
+
+resource "aws_s3_object" "tumlogo1" {
+  bucket = aws_s3_bucket.web_bucket.id
+  key    = "tumlogo1.png"
+  source = "image/tumlogo.png"
+}
